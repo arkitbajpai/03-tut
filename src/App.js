@@ -6,16 +6,16 @@ import About from "./About.js";
 import NewPost from "./NewPost.js";
 import PostPage from "./PostPage.js";
 import Missing from "./Missing.js";
-import{Route,Switch, useHistory} from 'react-router-dom';
-import { useState, useEffect } from "react";
+import{Route,Routes} from 'react-router-dom';
+//import { useState, useEffect } from "react";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-     <Header />
+     <Header title="Reeact Js Blog"/>
       <Nav />
-      <Switch>
+      <Routes>
         <Route exact path="/">
         <Home/>
         </Route>
@@ -27,7 +27,7 @@ function App() {
         </Route>
         <Route path="/about" Component={About} />
         <Route path="*" Component={Missing} />
-      </Switch>
+      </Routes>
      <Footer />
 
 
