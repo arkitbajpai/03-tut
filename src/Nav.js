@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { ink } from 'react-router-dom'
 const Nav = ({search, setSearch}) => {
   return (
     <nav className='Nav'>
