@@ -1,9 +1,11 @@
 import React from 'react'
 
-const Nav = () => {
+const Nav = ({search, setSearch}) => {
   return (
-    <nav>
-        <h2>Nav</h2>
+    <nav className='Nav'>
+       <form className='searchForm' onSubmit={(e)=>e.preventDefault()}>
+        <label htmlFor='search'>Search Posts</label>
+       </form>
     </nav>
   )
 }
